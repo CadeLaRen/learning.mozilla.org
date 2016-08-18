@@ -18,7 +18,7 @@
   "scripts": {
     "app": "npm run l10n && gulp app",
     "build": "gulp",
-    "l10n": "node scripts/properties2json",
+    "l10n": "pontoon-to-json",
     "cleanup": "rm -rf dist && npm run l10n",
     "preapp": "npm run cleanup",
     "prebuild": "npm run cleanup",
@@ -82,6 +82,7 @@
     "moment": "^2.10.3",
     "mozilla-tabzilla": "^0.5.1",
     "object-assign": "^4.1.0",
+    "pontoon-to-json": "^0.1.1",
     "properties-parser": "^0.3.1",
     "q-io": "^1.13.2",
     "react": "^0.14.0",
